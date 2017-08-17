@@ -22,51 +22,8 @@ router.get('/v1/profile/:profileId',cors(),function(request,response) {
 	var profileId = request.params.profileId;
 	console.log('Profile Id----'+profileId);
 	var profileObj = {"firstName":"James","lastName":"Mark","email":"James@apl.com","phone":"5432212345"};
-  // var reqObj = {"getProfileByIdRequest":{"profileId":"8186b1c5-801c-4662-b876-9e05ec0d1e1b"} };
-  // console.log('Request Object--->'+reqObj);
-  // var jsonObj = JSON.stringify(reqObj);
-  // console.log('JSON Object--->'+jsonObj);
-  //To perform SOA Call
-//   var options = {
-//     key:   'changeit',  // Secret client key
-//     cert:  fs.readFileSync("./certificate/dev-soapui-pem.pem"),  // Public client key
-//     method : 'POST',
-//     // rejectUnauthorized: false,              // Used for self signed server
-//     host: 'https://qa-api.apolloglobalqa.com',
-//     path: '/servicegateway/rest/profile/v2/getProfileById',
-//     passphrase: 'changeit',
-//     headers: {
-//       'Content-Type': 'application/json',
-//       'Accept': 'application/json',
-//       'Content-Length' : Buffer.byteLength(jsonObj, 'utf8')
-//     }
-// };
-
-console.log('-----Before Performing the service call----');
-
-// do the POST call
-// var reqPost = https.request(options, function(res) {
-//     console.log("statusCode: ", res.statusCode);
-//     // uncomment it for header details
-// //  console.log("headers: ", res.headers);
  
-//     res.on('data', function(d) {
-//         console.info('POST result:\n');
-//         console.log(d);
-//         process.stdout.write(d);
-//         console.info('\n\nPOST completed');
-//     });
-
-
-
-// });
-
-
-// write the json data
-// reqPost.end();
-// reqPost.on('error', function(e) {
-//     console.error(e);
-// });
+  console.log('-----Before Performing the service call----');
 
 
 	if(profileObj != null) {
