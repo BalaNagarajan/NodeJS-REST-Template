@@ -9,7 +9,7 @@ b. sudo npm install -g  express-generator (Helps to build the Node JS structure)
 
 Run the server : 
 cd >> directory
-node bin/www
+node bin/www (Type this command)
 
 Sample URLS : http://localhost:5000/api/profiles/v1/profile/678
 
